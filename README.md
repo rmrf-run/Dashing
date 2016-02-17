@@ -31,6 +31,7 @@
 Code has been pulled from working enviroment and edited to remove corporate info, some things may have been fat fingered while editing so please edit appropriately. Also this is my 2nd or 3rd foray into ruby so if the code could have been written better please let me know where.
 
 ### Thanks
+- [@Shopify](https://github.com/Shopify/dashing), for dashing
 - [@frvi](https://github.com/frvi), For the original DockerFiles
 - [@mattgruter](https://github.com/mattgruter), Awesome contributions!
 - [@rowanu](https://github.com/rowanu), [Hotness Widget](https://gist.github.com/rowanu/6246149).
@@ -41,5 +42,5 @@ Code has been pulled from working enviroment and edited to remove corporate info
 - [@QuibitProducts](https://github.com/QubitProducts/dashing-contrib), A dashing contribution library, I used [Switcher](https://github.com/QubitProducts/dashing-contrib/wiki/Widget:-Switcher) specifically.
 - [@andre-morassut](https://gist.github.com/andre-morassut/8670610), Dashing Hotness Meter Widget
 
-
+![screenshot](https://raw.githubusercontent.com/mylivingweb/Dashing/master/screenshot.png)
 
