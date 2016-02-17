@@ -1,0 +1,59 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+<% content_for :title do %>RHEV Status<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+    <i class="icon-time icon-background"></i>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="vmsonline" data-view="Number" style="background-color: #0060a9"  data-title="Virtual Machines"></div>
+      <div data-id="totalmemused" data-view="Number" style="background-color: #0060a9"  data-title="VMs Used Ram"></div>-->
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="hostsonline" data-view="Number" style="background-color: #0060a9"  data-title="Hosts"></div>
+    </li>
+<li data-switcher-interval="16000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sdsonline" data-view="Number" style="background-color: #0060a9"  data-title="Storage Domains"></div>
+      <div data-id="totalSD" data-view="Number" style="background-color: #0060a9"  data-title="Total Storage"></div>
+      <div data-id="usedSD" data-view="Number" style="background-color: #0060a9"  data-title="Used Storage"></div>
+      <div data-id="availSD" data-view="Number" style="background-color: #0060a9"  data-title="Available Storage"></div>
+</li>
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="dcsonline" data-view="Number" style="background-color: #0060a9"  data-title="Data Centers"></div>
+    </li>
+<li data-switcher-interval="6000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+     <div data-id="node0Status" data-view="HotStatus" data-title="node 0 Status" ></div>
+</li>
+<li data-switcher-interval="6000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node0MemPer" data-view="Hotmeter" data-title='node 0 used Memory' data-min='0' data-max='100' data-cool="20" data-warm="90" data-suffix="%"></div>
+</li>
+<li data-switcher-interval="6000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node0TotalCPU" data-view="Hotmeter" data-title='node 0 used CPU' data-min='0' data-max='100' data-cool="20" data-warm="80" data-suffix="%"></div>
+</li>
+<li data-switcher-interval="6000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node0Info" data-view="List" data-unordered="true" data-title="node 0 Info" style="background-color: #0060a9"></div>
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+<div data-id="sensu-status" data-view="Sensu" data-unordered="true" data-title="Sensu" data-moreinfo="Unacknowledged events"></div>
+</li>
+<li data-switcher-interval="8000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node1Status" data-view="HotStatus" data-title="Node 1 Status" ></div>
+</li>
+<li data-switcher-interval="8000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node1MemPer" data-view="Hotmeter" data-title='Node 1 Used Memory' data-min='0' data-max='100' data-cool="20" data-warm="90" data-suffix="%"></div>
+</li>
+<li data-switcher-interval="8000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node1TotalCPU" data-view="Hotmeter" data-title='Node 1 Used CPU' data-min='0' data-max='100' data-cool="20" data-warm="80" data-suffix="%"></div>
+</li>
+<li data-switcher-interval="8000" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+<div data-id="node1Info" data-view="List" data-unordered="true" data-title="Node 1 Info" style="background-color: #0060a9"></div>
+
+</li>
+</ul>
+</div>

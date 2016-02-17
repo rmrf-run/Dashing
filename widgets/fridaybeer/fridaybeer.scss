@@ -1,0 +1,181 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+$background-color: rgba(14, 131, 205, 0.8);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+
+.widget-fridaybeer {
+  background-color: $background-color;
+  @import url(http://fonts.googleapis.com/css?family=Lato:700,900);
+
+  #container {
+    height: 370px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+    width: 248px;
+  }
+
+  #container div { position: absolute; }
+
+  .pour {
+    position: absolute;
+    left: 45%;
+    width: 20px;
+    height: 0px;
+    background-color: #edaf32;
+    border-radius: 10px
+  }
+
+  #beaker {
+    border: 10px solid #FFF;
+    border-top: 0;
+    border-radius: 0 0 30px 30px;
+    height: 200px;
+    left: 14px;
+    bottom: 0;
+    width: 200px;
+  }
+
+  #beaker:before,
+  #beaker:after {
+    border: 10px solid #FFF;
+    border-bottom: 0;
+    border-radius: 30px 30px 0 0;
+    content: '';
+    height: 30px;
+    position: absolute;
+    top: -40px;
+    width: 30px;
+  }
+
+  #beaker:before { left: -49px; }
+  #beaker:after { right: -49px; }
+
+  #liquid {
+    background-color: #edaf32;
+    border: 10px solid #edaf32;
+    border-radius: 0 0 20px 20px;
+    bottom: 0;
+    height: 0px;
+    overflow: hidden;
+    width: 180px;
+  }
+
+  #liquid:after {
+    background-color: rgba(255, 255, 255, 0.25);
+    bottom: -10px;
+    content: '';
+    height: 200px;
+    left: -40px;
+    position: absolute;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(15deg);
+    width: 110px;
+  }
+
+  /* Foam */
+
+  .beer-foam {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .foam-1, .foam-2, .foam-3, .foam-4,
+  .foam-5, .foam-6, .foam-7 {
+    float: left;
+    position: absolute;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fefefe;
+  }
+  .foam-1 {
+    top: -30px;
+    left: -10px;
+  }
+  .foam-2 {
+    top: -35px;
+    left: 20px;
+  }
+  .foam-3 {
+    top: -25px;
+    left: 50px;
+  }
+  .foam-4 {
+    top: -35px;
+    left: 80px;
+  }
+  .foam-5 {
+    top: -30px;
+    left: 110px;
+  }
+  .foam-6 {
+    top: -20px;
+    left: 140px;
+  }
+  .foam-7 {
+    top: -30px;
+    left: 160px;
+  }
+}
+#liquid .bubble {
+  -webkit-animation-name: bubble;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  background-color: rgba(255, 255, 255, 0.2);
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+@-webkit-keyframes bubble {
+  0% { bottom: 0; }
+
+   50% {
+     background-color: rgba(255, 255, 255, 0.2);
+      bottom: 80px;
+   }
+
+   100% {
+     background-color: rgba(255, 255, 255, 0);
+      bottom: 160px;
+   }
+}
+
+.bubble1 {
+  left: 10px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble2 {
+  left: 50px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble3 {
+  left: 100px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble4 {
+  left: 130px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble5 {
+  left: 170px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 800ms;
+}

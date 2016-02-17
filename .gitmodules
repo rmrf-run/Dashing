@@ -1,0 +1,3 @@
+[submodule "dockerfile-dashing"]
+	path = dockerfile-dashing
+	url = https://github.com/mylivingweb/dockerfile-dashing

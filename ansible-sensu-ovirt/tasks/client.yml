@@ -1,0 +1,10 @@
+- name: Install Total Memory Check
+  copy: src=check_memory_total.sh dest=/etc/sensu/plugins/ mode=755
+- name: Install free  memory check
+  copy: src=check_memory_free.sh dest=/etc/sensu/plugins/ mode=755
+- name: Install count vms
+  copy: src=count_vms.sh dest=/etc/sensu/plugins/ mode=755
+- name: Install Sensu selinux plugins
+  gem: name=sensu-plugins-selinx state=latest user_install=no executable=/opt/sensu/embedded/bin/gem
+- name: Restart client
+  service: name=sensu-client state=restarted enabled=yes
